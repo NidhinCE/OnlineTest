@@ -1,0 +1,47 @@
+[
+    {   
+        "Id":"1",
+        "questionText": "What is the Capital of West Bengal.",
+        "A": "Calicut",
+        "B": "Durgapur",
+        "C": "Kharagpur",
+        "D": "Kolkata",
+        "answer": "a"
+    },
+    {
+        "Id":"2",
+        "questionText": " What is the Capital of Tripura.",
+        "A": "Udaipur",
+        "B": "Agartala",
+        "C": "Aizawl",
+        "D": "Kanchanpur",
+        "answer": "b"
+    },
+    {
+        "Id":"3",
+        "questionText": " What is the Capital of Rajasthan.",
+        "A": "Rajsamand",
+        "B": "Ajmer",
+        "C": "Jodhpur",
+        "D": "Jaipur",
+        "answer": "d"
+    },
+    {
+        "Id":"4",
+        "questionText": " What is the Capital of Maharasthtra.",
+        "A": "Mumbai",
+        "B": "Bhopal",
+        "C": "Bihar",
+        "D": "Bangalore",
+        "answer": "a"
+    },
+    {
+        "Id":"5",
+        "questionText": " What is the Capital of Tamil Nadu.",
+        "A": "Kanchipuram",
+        "B": "Coimbatore",
+        "C": "Chennai",
+        "D": "Madurai",
+        "answer": "c"
+    }
+]

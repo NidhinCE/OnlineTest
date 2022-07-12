@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-body">
+        <form #takeExam="ngForm" novalidate>
+            <div>
+                <h5>Please select correct answer from below questions</h5>
+                <p></p>
+            </div>
+            <div *ngFor="let q of questions">
+                <hr>
+                <div><b>Question {{q.Id}}.  </b>{{q.questionText}}</div>
+                <div class="col-md-9 col-form-label">
+                    <div class="form-check form-check-inline mr-1">
+                        <input type="radio" class="form-check-input" name="{{q.Id}}" value="a" [(ngModel)]="q.selected">
+                        <label class="form-check-label">a) {{q.A}}</label>
+                    </div>
+                    <div class="form-check form-check-inline mr-1">
+                        <input type="radio" class="form-check-input" name="{{q.Id}}" value="b" [(ngModel)]="q.selected">
+                        <label class="form-check-label">b) {{q.B}}</label>
+                    </div>
+                    <div class="form-check form-check-inline mr-1">
+                        <input type="radio" class="form-check-input" name="{{q.Id}}" value="c" [(ngModel)]="q.selected">
+                        <label class="form-check-label">c) {{q.C}}</label>
+                    </div>
+                    <div class="form-check form-check-inline mr-1">
+                        <input type="radio" class="form-check-input" name="{{q.Id}}" value="d" [(ngModel)]="q.selected">
+                        <label class="form-check-label">d) {{q.D}}</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="span2">
+            <button class="btn btn-primary btn-block  me-3" (click)="submit()">Submit</button>
+            <button class="btn btn-success btn-block" (click)="reset()">Reset</button>
+        </div>
+        <!-- <div class="row">
+            <button type="button" class="btn btn-primary" (click)="submit()">Submit</button>
+        </div> -->
+    </div>
+</div>
+
+<div>
+    <div>
+        Total Questions: {{totalQuestions}}
+    </div>
+    <div>
+        Total Correct Answers: {{correctAnswerCount}}
+    </div>
+</div>
